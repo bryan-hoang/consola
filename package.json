@@ -22,40 +22,36 @@
   "exports": {
     ".": {
       "node": {
-        "types": "./dist/index.d.ts",
         "import": "./dist/index.mjs",
-        "require": "./lib/index.cjs"
+        "require": {
+          "types": "./dist/index.d.cts",
+          "default": "./lib/index.cjs"
+        }
       },
       "default": {
-        "types": "./dist/browser.d.ts",
         "import": "./dist/browser.mjs",
         "require": "./dist/browser.cjs"
       }
     },
     "./browser": {
-      "types": "./dist/browser.d.ts",
       "import": "./dist/browser.mjs",
       "require": "./dist/browser.cjs"
     },
     "./basic": {
       "node": {
-        "types": "./dist/basic.d.ts",
         "import": "./dist/basic.mjs",
         "require": "./dist/basic.cjs"
       },
       "default": {
-        "types": "./dist/browser.d.ts",
         "import": "./dist/browser.mjs",
         "require": "./dist/browser.cjs"
       }
     },
     "./core": {
-      "types": "./dist/core.d.ts",
       "import": "./dist/core.mjs",
       "require": "./dist/core.cjs"
     },
     "./utils": {
-      "types": "./dist/utils.d.ts",
       "import": "./dist/utils.mjs",
       "require": "./dist/utils.cjs"
     }
